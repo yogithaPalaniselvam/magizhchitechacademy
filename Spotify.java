@@ -6,10 +6,12 @@ class Spotify
 			Scanner sc=new Scanner(System.in);
 			Scanner ss=new Scanner(System.in);
 			int opt;
+			do
+			{
 			System.out.println("-------------------------------");
 			System.out.println("    WELCOME TO SPOTIFY ");
 			System.out.println("-------------------------------");
-			System.out.println("ENTER YOUR OPTION :\n1.ILAYARAJA \n2.YUVAN \n3.A.R.RAHMAN \n4.ANIRUDH \n5.HARRISH JEYARAJ ");
+			System.out.println("ENTER YOUR OPTION :\n1.ILAYARAJA \n2.YUVAN \n3.A.R.RAHMAN \n4.ANIRUDH \n5.HARRISH JEYARAJ \n6.EXIT");
 			opt=sc.nextInt();
 			if(opt==1)
 				{
@@ -686,15 +688,15 @@ class Spotify
 								}
 							else if(ch==2)
 								{
-									System.out.println("PLAYING VELICHA POVAE....");
+									System.out.println("PLAYING ANUL MAELE....");
 								}
 							else if(ch==3)
 								{
-									System.out.println("PLAYING PO INDRU NEEYAGA....");
+									System.out.println("PLAYING EDHO ONDRU....");
 								}
 							else if(ch==4)
 								{
-									System.out.println("PLAYING NEE PAARTHA VILIGAL...");
+									System.out.println("PLAYING VASEEGARA...");
 								}
 							else
 								{
@@ -816,10 +818,16 @@ class Spotify
 							System.out.println("\n*******THANKYOU******");
 							System.out.println("\n----------------------------");
 						}
-						else
+						
+					}
+					else if(opt==6)
+					{
+							sc.close();
+					}
+					else
 						{
 							System.out.println("INVALID OPTION");
-						}
-					}
+						}	
+			}while(true);
 			}
 	}
