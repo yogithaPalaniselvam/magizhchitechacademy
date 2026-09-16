@@ -9,7 +9,7 @@ class CountDigit
 			System.out.println("FIND NUMBER OF DIGITS");
 			System.out.print("ENTER THE NUMBER TO FIND DIGITS : ");num=sc.nextInt();
 			int s=num;
-			while(num%10!=0)
+			while(num>0)
 			{	
 				count+=1;
 				num/=10;
